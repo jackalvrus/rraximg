@@ -19,7 +19,7 @@ if(isset($_COOKIE[$passwordCookie])) {
 
         <form action="/img/process.php" method="post" enctype="multipart/form-data">
             Select image to upload:
-            <input type="file" accept="image/*" name="fileToUpload" id="fileToUpload">
+            <input type="file" accept="image/*" name="filesToUpload[]" id="filesToUpload" multiple="multiple">
             <input type="submit" name="submit" value="Upload">
         </form>
 
