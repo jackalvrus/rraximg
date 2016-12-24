@@ -1,20 +1,17 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <?php
-        include 'common/head.php';
-    ?>
+    <?php include 'common/head.php'; ?>
 </head>
 <body>
 
     <?php
     include 'common/header.php';
-    
     include 'common/loggedIn.php';
     ?>
 
     <div class="images container">
-        <div class="imageList clearfix">
+        <div class="imageList">
             <?php
             if($username) {
 

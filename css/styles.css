@@ -3,9 +3,12 @@ body {
 }
 
 
+
+
 header.navbar {
     background: #936E60;
     border-radius: 0;
+    z-index: 10;
 }
 header.navbar a {
     color: white;
@@ -31,19 +34,36 @@ header.navbar .navbar-nav>li>a {
 
 
 
+
+.uploadCentering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 .uploadWrapper {
     text-align: center;
 }
 .progressWrapper {
     display: none;
+    margin-top: 20px;
 }
 .uploadWrapper .fileinput-button {
+    color: #666;
     position: relative;
     overflow: hidden;
     display: inline-block;
-    margin: 0 0 20px;
+    margin: 0;
+    padding: 20px;
+    font-size: 22px;
 }
-.fileinput-button input {
+.uploadWrapper .fileinput-button input {
     position: absolute;
     top: 0;
     right: 0;
@@ -71,29 +91,84 @@ header.navbar .navbar-nav>li>a {
 .imageList {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+.imageList:after {
+  content: "";
+  flex: auto;
 }
 .imageListItem {
-    margin: 0 10px 20px 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 50%;
+}
+.imageLink {
+    border: 1px solid #999;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 2px;
+}
+.imageLink:hover {
+    border: 1px solid black;
 }
 .imageBlock {
     height: 120px;
     width: 120px;
 }
-/*
-@media screen and (min-width: 768px) {
-    .imageList {
-        width: 280px;
+@media screen and (min-width: 370px) {
+    .imageBlock {
+        height: 100px;
+        width: 100px;
+    }
+    .imageListItem {
+        margin-bottom: 5px;
+        width: 33.3333333%;
+    }
+}
+@media screen and (min-width: 425px) {
+    .imageBlock {
+        height: 115px;
+        width: 115px;
+    }
+    .imageListItem {
+        margin-bottom: 10px;
     }
 }
 
+@media screen and (min-width: 500px) {
+    .imageBlock {
+        height: 100px;
+        width: 100px;
+    }
+    .imageListItem {
+        margin-bottom: 5px;
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .imageBlock {
+        height: 120px;
+        width: 120px;
+    }
+    .imageListItem {
+        margin-bottom: 10px;
+        width: 25%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .imageListItem {
+        width: 20%;
+    }
+}
 @media screen and (min-width: 992px) {
-    .imageList {
-        width: 280px;
+    .imageListItem {
+        width: 16.6666666%;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .imageList {
-        width: 280px;
+    .imageListItem {
+        width: 12.5%;
     }
-}*/
+}

@@ -1,22 +1,19 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <?php
-        include 'common/head.php';
-    ?>
+    <?php include 'common/head.php'; ?>
 </head>
 <body>
 
     <?php
     include 'common/header.php';
-
     include 'common/loggedIn.php';
 
     if($username) {
     ?>
-        <div class="uploadWrapper container">
-
-                <div class="addFiles btn btn-success fileinput-button">
+        <div class="uploadCentering">
+            <div class="uploadWrapper">
+                <div class="addFiles btn btn-default btn-lg fileinput-button">
                     <i class="glyphicon glyphicon-plus"></i>
                     <span>Add files...</span>
                     <input id="fileupload" type="file" name="files[]" multiple>
@@ -27,9 +24,8 @@
                 </div>
 
                 <div id="files" class="uploadedFiles files"></div>
-
+            </div>
         </div>
-
     <?php
     } else {
         echo $loginMessage;
