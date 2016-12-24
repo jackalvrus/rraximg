@@ -1,0 +1,99 @@
+body {
+    background: #DEDEDE;
+}
+
+
+header.navbar {
+    background: #936E60;
+    border-radius: 0;
+}
+header.navbar a {
+    color: white;
+}
+header.navbar a:hover {
+    color: black;
+}
+header.navbar .navbar-header {
+    float: left;
+}
+header.navbar .navbar-right {
+    float: right !important;
+    margin: 0 -15px 0 0;
+}
+header.navbar .navbar-nav>li {
+    float: left;
+}
+header.navbar .navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+
+.uploadWrapper {
+    text-align: center;
+}
+.progressWrapper {
+    display: none;
+}
+.uploadWrapper .fileinput-button {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 0 20px;
+}
+.fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px !important;
+    direction: ltr;
+    cursor: pointer;
+}
+.uploadedFiles {
+    display: flex;
+    justify-content: center;
+}
+.fileUploadListItem {
+    margin: 0 10px 20px 10px;
+}
+
+
+
+
+
+
+
+.imageList {
+    display: flex;
+    flex-wrap: wrap;
+}
+.imageListItem {
+    margin: 0 10px 20px 10px;
+}
+.imageBlock {
+    height: 120px;
+    width: 120px;
+}
+/*
+@media screen and (min-width: 768px) {
+    .imageList {
+        width: 280px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .imageList {
+        width: 280px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .imageList {
+        width: 280px;
+    }
+}*/
