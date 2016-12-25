@@ -4,7 +4,7 @@ body {
 
 
 
-
+/* Shared Header*/
 header.navbar {
     background: #936E60;
     border-radius: 0;
@@ -34,7 +34,7 @@ header.navbar .navbar-nav>li>a {
 
 
 
-
+/* Upload/Index Page */
 .uploadCentering {
     display: flex;
     justify-content: center;
@@ -87,7 +87,7 @@ header.navbar .navbar-nav>li>a {
 
 
 
-
+/* Image Listing Page */
 .imageList {
     display: flex;
     flex-wrap: wrap;
@@ -170,5 +170,67 @@ header.navbar .navbar-nav>li>a {
 @media screen and (min-width: 1200px) {
     .imageListItem {
         width: 12.5%;
+    }
+}
+
+
+
+
+
+/* Single Image Page */
+.image {
+    display: block;
+}
+.imageSingle img {
+    max-width: 640px;
+    width: 100%;
+}
+.imageLinks {
+    background: #eee;
+    margin-top: 20px;
+    padding: 20px;
+}
+.imageType {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+}
+.imageDirectLink {
+    word-break: break-all;
+    margin-bottom: 10px;
+}
+.imageEmbed {
+    word-break: break-all;
+    margin-bottom: 20px;
+}
+
+.imageDirectLink span, .imageEmbed span {
+    background: gray;
+    font-size: 12px;
+    color: white;
+    padding: 5px;
+}
+
+.imageDirectLink span a {
+    color: white;
+}
+
+.imageDirectLink span a:hover {
+    color: white;
+}
+
+.imageError {
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    .image {
+        display: flex;
+    }
+    .imageSingle {
+        background: #eee;
+    }
+    .imageLinks {
+        margin: 0;
     }
 }
